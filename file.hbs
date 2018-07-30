@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Folha de Pagamento</title>
+
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        table thead {
+            font-size: 10px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        table:not(:first-child) thead th {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-bottom: none;
+            padding-left: 5px;
+        }
+
+        table tbody {
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        table tbody td {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-top: none;
+            padding-left: 10px;
+        }
+
+        .hours {
+            margin-top: 5px;
+            font-size: 13px;
+        }
+
+        .hours thead th {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .hours tbody tr:first-child {
+            text-align: center;
+        }
+
+        .hours tbody td {
+            font-size: 13px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Folha Ponto Individual de Trabalho {{ d.mes }}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th widht="70%">EMPREGADOR: NOME / EMPRESA</th>
+                <th widht="30%">CEI / CNPJ Nº</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SERRANA SERVIÇOS DE LIMPEZA LTDA ME</td>
+                <td>20.142.221/0001.01</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>ENDEREÇO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SERRANA SERVIÇOS DE LIMPEZA LTDA ME</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th width="40%">COLABORADOR(A)</th>
+                <th width="30%">Nº CTPS E SÉRIE</th>
+                <th width="20%">DATA DE ADMISSÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria Isabel de Mello</td>
+                <td>9942824 / 0040 RS</td>
+                <td>16/02//2016 </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th width="30%">FUNÇÃO</th>
+                <th width="30%">PRESTA SERVIÇO EM</th>
+                <th width="40%">HORÁRIO SEG - SEX</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Auxiliar de Limpeza</td>
+                <td>BS BIOS</td>
+                <td>08:00 as 12:00 e das 13:30 as 17:30</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th width="40%">HORÁRIO SÁBADOS</th>
+                <th width="20%">DESCANSO SEMANAL</th>
+                <th width="20%">MÊS</th>
+                <th width="20%">ANO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00 as 12:00 e das 13:30 as 17:30</td>
+                <td></td>
+                <td>AGOSTO</td>
+                <td>2018</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="hours">
+        <thead>
+            <tr>
+                <th>DIAS</th>
+                <th>ENTRADA</th>
+                <th colspan="2">ALMOÇO</th>
+                <th>SAÍDA</th>
+                <th rowspan="2">ASSINATURA</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>MÊS</td>
+                    <td>MANHÃ</td>
+                    <td>SAÍDA</td>
+                    <td>RETORNO</td>
+                    <td>TARDE</td>
+                    <td>ASSINATURA</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+
+</html>
